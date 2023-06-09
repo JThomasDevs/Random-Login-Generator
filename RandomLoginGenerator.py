@@ -43,20 +43,26 @@ while what_to_make not in valid_input:   # Input validation
 
 if what_to_make == 'emails':
     num_emails = int(input("How many emails would you like to generate? "))
-    with open('emails.txt', 'w') as emails:
+    with open('emails.txt', 'a') as emails:
         for i in range(num_emails):
-            emails.write(rand_email() + '\n')
+            emails.write(rand_email())
+            if i != num_emails - 1:
+                emails.write('\n')
 
 elif what_to_make == 'passwords':
     num_passwords = int(input("How many passwords would you like to generate? "))
     pass_length = int(input("How many characters long would you like the passwords to be? "))
-    with open('passwords.txt', 'w') as passwords:
+    with open('passwords.txt', 'a') as passwords:
         for i in range(num_passwords):
-            passwords.write(rand_pass(pass_length) + '\n')
+            passwords.write(rand_pass(pass_length))
+            if i != num_passwords - 1:
+                passwords.write('\n')
 
 elif what_to_make == 'both':
     num_logins = int(input("How many logins would you like to generate? "))
     pass_length = int(input("How many characters long would you like the passwords to be? "))
-    with open('logins.txt', 'w') as logins:
+    with open('logins.txt', 'a') as logins:
         for i in range(num_logins):
-            logins.write(rand_email() + ':' + rand_pass(pass_length) + '\n')
+            logins.write(rand_email() + ':' + rand_pass(pass_length))
+            if i != num_logins - 1:
+                logins.write('\n')
