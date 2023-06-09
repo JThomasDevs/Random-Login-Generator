@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Random-Login-Generator.iml" filepath="$PROJECT_DIR$/.idea/Random-Login-Generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../VondalsAccountCreator/.idea/VondalsAccountCreator.iml" filepath="$PROJECT_DIR$/../VondalsAccountCreator/.idea/VondalsAccountCreator.iml" />
+    </modules>
+  </component>
+</project>
